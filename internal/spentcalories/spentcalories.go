@@ -94,8 +94,8 @@ if err != nil {
 	distan1:=strconv.FormatFloat(distan, 'f', 2, 64)
 	speed1:=strconv.FormatFloat(speed, 'f', 2, 64)
 	calore1:=strconv.FormatFloat(calore, 'f', 2, 64)
-str:= "Тип тренировки: Бег\nДлительность: "+time1+" ч.\nДистанция: "+distan1+" км.\nСкорость: "+speed1+" км/ч\nСожгли калорий: "+calore1+"\n"
-return str, err
+
+return "Тип тренировки: Бег\nДлительность: "+time1+" ч.\nДистанция: "+distan1+" км.\nСкорость: "+speed1+" км/ч\nСожгли калорий: "+calore1+"\n", err
 	case "Ходьба":
 	calore, err:=WalkingSpentCalories(steps, weight, height, time)
 if err != nil {
