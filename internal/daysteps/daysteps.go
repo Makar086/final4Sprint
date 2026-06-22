@@ -68,6 +68,5 @@ fmt.Println("Ошибка ошибка 2 при разборе данных:", e
 	dist2:=strconv.FormatFloat(dist1, 'f', 2, 64)
 	calorie1:=strconv.FormatFloat(calorie, 'f', 2, 64)
 
-str:= "Количество шагов: "+step1+".\nДистанция составила "+dist2+ " км.\nВы сожгли "+calorie1+" ккал.\n"
-return str
+return "Количество шагов: "+step1+".\nДистанция составила "+dist2+ " км.\nВы сожгли "+calorie1+" ккал.\n"
 }
